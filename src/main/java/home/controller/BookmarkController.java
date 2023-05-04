@@ -1,26 +1,20 @@
 package home.controller;
 
 import home.controller.database.ConnectionMethods;
-import home.controller.DatabaseController;
 import home.controller.recommendation.recommendation;
 import home.controller.search.BookSearchManager;
-import home.controller.search.CoverUrlExtractor;
 import home.controller.search.MovieSearchManager;
-import home.controller.sorting.AlphaSort;
 import home.model.*;
+
 import javafx.animation.PauseTransition;
-//import javafx.event.Event;
-import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Bounds;
 import javafx.geometry.Pos;
-import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
@@ -32,13 +26,8 @@ import javafx.scene.paint.Color;
 import javafx.event.ActionEvent;
 import javafx.stage.WindowEvent;
 import javafx.util.Duration;
-
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class BookmarkController {
     @FXML

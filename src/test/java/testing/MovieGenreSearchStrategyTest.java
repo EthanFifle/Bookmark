@@ -1,15 +1,13 @@
 package testing;
 
-import home.controller.search.BookSearchManager;
 import home.controller.search.MovieSearchManager;
 import home.model.BookmarkConstants;
 import home.model.Movie;
 import home.model.SearchCriteria;
 import home.controller.search.MovieGenreSearchStrategy;
+
 import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Set;

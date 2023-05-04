@@ -1,16 +1,14 @@
 package testing;
+
 import home.controller.search.BookNameSearchStrategy;
 import home.controller.search.BookSearchManager;
-import home.controller.search.CoverUrlExtractor;
 import home.model.Book;
 import home.model.SearchCriteria;
-import org.json.simple.JSONObject;
+
 import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
-
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;

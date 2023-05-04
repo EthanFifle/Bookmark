@@ -1,11 +1,9 @@
 package home.controller;
 
 import home.controller.database.ConnectionMethods;
-import javafx.event.EventHandler;
 import javafx.scene.control.Tab;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
 
 public class LoginController {
 

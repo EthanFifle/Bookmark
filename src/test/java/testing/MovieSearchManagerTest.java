@@ -1,9 +1,9 @@
 package testing;
 
 import home.controller.search.MovieSearchManager;
-import home.controller.search.MovieTitleSearchStrategy;
 import home.model.Movie;
 import home.model.SearchCriteria;
+
 import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
 import java.util.Iterator;

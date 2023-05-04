@@ -1,7 +1,6 @@
 package home.controller.sorting;
 
 import java.util.*;
-
 public class AlphaSort {
 
     public AlphaSort(){

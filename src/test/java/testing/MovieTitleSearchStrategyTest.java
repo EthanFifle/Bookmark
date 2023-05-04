@@ -8,8 +8,6 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 public class MovieTitleSearchStrategyTest {
 
     //This test tests to ensure the URL for searching by movie name is correct

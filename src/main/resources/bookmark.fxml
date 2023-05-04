@@ -4,8 +4,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.collections.FXCollections?>
-
 <?import javafx.scene.image.ImageView?>
+
 <TabPane xmlns:fx="http://javafx.com/fxml" fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
          minWidth="-Infinity" tabClosingPolicy="UNAVAILABLE" style="-fx-background-color: #0f0e26;"
          fx:controller="home.controller.BookmarkController" stylesheets="@stylesheet.css">

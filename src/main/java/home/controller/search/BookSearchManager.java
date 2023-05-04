@@ -1,8 +1,8 @@
 package home.controller.search;
 
 import home.model.Book;
-import home.model.BookmarkConstants;
 import home.model.SearchCriteria;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
