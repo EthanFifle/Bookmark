@@ -1,0 +1,66 @@
+CREATE SCHEMA bookmark;
+
+CREATE TABLE user_log
+(
+    p_key      INT          NOT NULL AUTO_INCREMENT,
+    user_id    VARCHAR(255) NOT NULL,
+    type_log   VARCHAR(255) NOT NULL,
+    time_stamp DATETIME     NOT NULL,
+    PRIMARY KEY (p_key)
+);
+
+CREATE TABLE user_tbl
+(
+    username     VARCHAR(255) NOT NULL,
+    pswrd        VARCHAR(255) NOT NULL,
+    email        VARCHAR(255) NOT NULL,
+    time_stamp   DATETIME     NOT NULL,
+    PRIMARY KEY (username),
+    UNIQUE (email)
+);
+
+SELECT * FROM user_tbl;
+DROP TABLE user_tbl;
+
+CREATE TABLE my_book_list
+(
+    book_id      VARCHAR(255) NOT NULL,
+    user_id      VARCHAR(255) NOT NULL,
+    identifier   VARCHAR(255) NOT NULL,
+    title        VARCHAR(255) NOT NULL,
+    author       VARCHAR(255) NOT NULL,
+    is_favourite INT          NOT NULL,
+    time_stamp   DATETIME     NOT NULL,
+    PRIMARY KEY (book_id),
+    CHECK (is_favourite IN (0, 1))
+);
+
+CREATE TABLE my_movie_list
+(
+    movie_id     BIGINT       NOT NULL,
+    user_id      VARCHAR(255) NOT NULL,
+    identifier   VARCHAR(255) NOT NULL,
+    title        VARCHAR(255) NOT NULL,
+    release_date VARCHAR(255) NOT NULL,
+    movie_dsc    VARCHAR(255) NULL,
+    is_favourite INT          NOT NULL,
+    time_stamp   DATETIME     NOT NULL,
+    PRIMARY KEY (movie_id)
+);
+
+
+CREATE TABLE my_future_list
+(
+    p_key        INT NOT NULL AUTO_INCREMENT,
+    book_id      VARCHAR(255) NULL,
+    movie_id     BIGINT       NULL,
+    user_id      VARCHAR(255) NOT NULL,
+    identifier   VARCHAR(255) NOT NULL,
+    title        VARCHAR(255) NOT NULL,
+    author       VARCHAR(255) NULL,
+    release_date VARCHAR(255) NULL,
+    movie_dsc    VARCHAR(255) NULL,
+    time_stamp   DATETIME     NOT NULL,
+    PRIMARY KEY (p_key),
+    CHECK (book_id IS NOT NULL OR movie_id IS NOT NULL)
+);
