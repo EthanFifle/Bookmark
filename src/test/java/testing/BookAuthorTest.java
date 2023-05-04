@@ -1,15 +1,13 @@
 package testing;
 
-import home.yorku.bookmarks.controller.search.BookSearchManager;
-import home.yorku.bookmarks.controller.search.MovieTitleSearchStrategy;
-import home.yorku.bookmarks.model.Book;
-import home.yorku.bookmarks.model.BookmarkConstants;
-import home.yorku.bookmarks.model.SearchCriteria;
+import home.controller.search.BookSearchManager;
+import home.controller.search.MovieTitleSearchStrategy;
+import home.model.Book;
+import home.model.BookmarkConstants;
+import home.model.SearchCriteria;
 import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
-
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Set;
 

@@ -1,6 +1,6 @@
 package testing;
 
-import home.yorku.bookmarks.controller.search.CoverUrlExtractor;
+import home.controller.search.CoverUrlExtractor;
 import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
 

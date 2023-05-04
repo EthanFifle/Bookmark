@@ -1,11 +1,11 @@
 package testing;
 
-import home.yorku.bookmarks.controller.search.BookSearchManager;
-import home.yorku.bookmarks.controller.search.MovieSearchManager;
-import home.yorku.bookmarks.model.BookmarkConstants;
-import home.yorku.bookmarks.model.Movie;
-import home.yorku.bookmarks.model.SearchCriteria;
-import home.yorku.bookmarks.controller.search.MovieGenreSearchStrategy;
+import home.controller.search.BookSearchManager;
+import home.controller.search.MovieSearchManager;
+import home.model.BookmarkConstants;
+import home.model.Movie;
+import home.model.SearchCriteria;
+import home.controller.search.MovieGenreSearchStrategy;
 import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;

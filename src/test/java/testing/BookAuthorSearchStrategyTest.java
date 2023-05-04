@@ -1,7 +1,7 @@
 package testing;
 
-import home.yorku.bookmarks.controller.search.BookAuthorSearchStrategy;
-import home.yorku.bookmarks.model.SearchCriteria;
+import home.controller.search.BookAuthorSearchStrategy;
+import home.model.SearchCriteria;
 import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;
 

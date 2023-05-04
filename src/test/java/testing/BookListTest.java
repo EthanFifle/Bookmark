@@ -1,10 +1,10 @@
 package testing;
 
-import home.yorku.bookmarks.controller.BookmarkController;
-import home.yorku.bookmarks.controller.PortfolioController;
-import home.yorku.bookmarks.controller.search.BookNameSearchStrategy;
-import home.yorku.bookmarks.controller.search.BookSearchManager;
-import home.yorku.bookmarks.model.*;
+import home.controller.BookmarkController;
+import home.controller.PortfolioController;
+import home.controller.search.BookNameSearchStrategy;
+import home.controller.search.BookSearchManager;
+import home.model.*;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 

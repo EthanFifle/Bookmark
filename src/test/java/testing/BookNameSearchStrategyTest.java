@@ -1,9 +1,9 @@
 package testing;
-import home.yorku.bookmarks.controller.search.BookNameSearchStrategy;
-import home.yorku.bookmarks.controller.search.BookSearchManager;
-import home.yorku.bookmarks.controller.search.CoverUrlExtractor;
-import home.yorku.bookmarks.model.Book;
-import home.yorku.bookmarks.model.SearchCriteria;
+import home.controller.search.BookNameSearchStrategy;
+import home.controller.search.BookSearchManager;
+import home.controller.search.CoverUrlExtractor;
+import home.model.Book;
+import home.model.SearchCriteria;
 import org.json.simple.JSONObject;
 import org.junit.jupiter.api.Assertions;
 import org.testng.annotations.Test;

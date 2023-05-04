@@ -1,4 +1,4 @@
-module com.home.yorku.bookmarks{
+module com.home{
     requires javafx.controls;
     requires javafx.graphics;
     requires javafx.fxml;
@@ -9,8 +9,8 @@ module com.home.yorku.bookmarks{
     requires org.junit.jupiter.api;
     requires org.mariadb.jdbc;
 
-    exports home.yorku.bookmarks.model;
-    exports home.yorku.bookmarks.view;
-    exports home.yorku.bookmarks.controller;
-    opens home.yorku.bookmarks.controller to javafx.fxml;
+    exports home.model;
+    exports home.view;
+    exports home.controller;
+    opens home.controller to javafx.fxml;
 }
